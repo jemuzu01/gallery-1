@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background-color: #28282B;
+  overflow-x: hidden;
+  margin: 0;
+}
 .App {
   text-align: center;
 }
@@ -12,6 +19,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+*{
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +48,161 @@
     transform: rotate(360deg);
   }
 }
+.primary--nav
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.primary--nav--container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.primary--nav--container ul {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+}
+.primary--nav--container ul a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFFF;
+}
+.header-logo {
+  display: flex;
+}
+.header-logo img {
+  height: 50px;
+  width: 50px;
+}
+.primary--nav--container ul {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+.galler--container {
+  width: 100%;
+  display: flex;
+  max-width: 1093px;
+  margin: 0 auto;
+  gap: 10px;
+}
+.cardImage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  flex-direction: column;
+  position: relative;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.show {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  max-width: 500px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
+  justify-content: center;
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.hide
+{
+  display: none;
+}
+.cardImage button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: navajowhite;
+  color: transparent;
+}
+.cardImage button:hover {
+  color: #FFFF;
+}
+.gallery-side-container-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.gallery-side-container-header button {
+  background: transparent;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+}
+.gallery-side-container-header button:hover {
+  color: #36d7b7;
+}
+.gallery-side-container-image {
+  height: 240px;
+  width: 100%;
+}
+.gallery-side-container-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.gallery-side-container-description {
+  text-align: left;
+  padding: 10px;
+}
+.gallery-side-container-description p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.loader-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
+
+
+
